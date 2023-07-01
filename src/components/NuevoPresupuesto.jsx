@@ -10,6 +10,7 @@ const NuevoPresupuesto = ({presupuesto,setPresupuesto}) => {
 
         if(!Number(presupuesto) || Number(presupuesto) < 0){
             setMensaje('El Presupuesto no es Valido');
+            return;
         }else{
             console.log('Presupuesto valido');
         }
